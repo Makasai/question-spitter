@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="questions.js"></script>
+    </head>
+    <body>
+        <p>Thank you for participating in this cycle's life group!
+
+        <p>Push a button and get a question!</p>
+            
+        <p>There are 3 buttons. Each represents how personal the questions are:</p>
+        <ol>
+            <li>Easy - Surface level, like how's the weather?</li>
+            <li>Medium - Get to know you better</li>
+            <li>Hard - Deep personal questions (good luck :P)</li>
+        </ol>    
+        <div class='center'>
+            <h2>Ask a question!</h2>
+        </div>
+        <p id=question class='center'>&nbsp;</p>
+        <div id="buttons" class='center'>
+            <button type="button" id="easy" onclick="getQuestion('easy')">Easy</button>
+            <button type="button" id="medium" onclick="getQuestion('medium')">Medium</button>
+            <button type="button" id="hard" onclick="getQuestion('hard')">Hard</button>
+        </div>
+        <div>
+            <h3>History</h3>
+            <ul id='history'></ul>
+        </div>
+    </body>
+</html>
